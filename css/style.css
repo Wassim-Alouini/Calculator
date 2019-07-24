@@ -1,0 +1,107 @@
+
+
+#grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-areas:"h h h h"
+                      "s s s s"
+                      "sev eig nin su"
+                      "fou fiv six ad"
+                      "one two thr mul"
+                      "zer res equ div";
+  width:400px;
+  text-align:center;
+  border:2px solid black;
+  padding:7px;    
+  height: 500px;  
+  position:absolute;
+  right:35%;     
+  top:20%;  
+  background-color:gray;
+  
+  
+}
+
+#grid input{
+  background-color:rgb(49, 48, 48);
+  border:solid gray;
+  transition:0.2s;
+  font-weight: bold;
+}
+#grid #title{
+  font-weight:bold;
+  font-family:calibri;
+  font-size:1.2em;
+}
+#grid input:hover{
+  background-color:rgb(190, 90, 8);
+}
+#grid #result{
+  background-color:black;
+  color:rgb(102, 216, 102);
+  font-size:2.6em;
+  text-align:right;
+}
+#one{
+  grid-area:one
+}
+#two {
+  grid-area:two
+}
+#three {
+  grid-area:thr
+}
+#four {
+  grid-area:fou
+}
+#five {
+  grid-area:fiv
+}
+#six {
+  grid-area:six
+}
+#seven {
+  grid-area:sev
+}
+#eight {
+  grid-area:eig
+}
+#nine {
+  grid-area:nin
+}
+#add {
+  grid-area:ad
+}
+#multiply {
+  grid-area:mul
+}
+#substract {
+  grid-area:su
+}
+#equals {
+  grid-area:equ
+}
+#res {
+  grid-area:res
+}
+#divide {
+  grid-area:div
+}
+#zero {
+  grid-area:zer
+}
+#title{
+  grid-area:h
+}
+#result{
+  grid-area:s
+}
+#bonus-switch{
+  width:15px;
+  height: 15px;
+  background-color:blue;
+  position:absolute;
+  left:35%;
+  top:21%;
+}
